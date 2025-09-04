@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+/* App.css */
+
+/* Base Reset */
+body, html, #root {
+  margin: 100;
+  padding: 1;
+  height: 90%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #8e9eab);
+  color: #000000;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(135deg, #fff7f0, #ffe8d6); /* soft warm background */
+  color: #d35400; /* autumn orange */
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  border-radius: 0.875rem;  /* 14px = 0.875rem */
+
+  margin: 1rem auto;
+  max-width: 75rem;
+  box-shadow: 0 0.375rem 0.875rem rgba(211, 84, 0, 0.25); /* orange glow */
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Decorative underline */
+.app-header::after {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.25rem;
+  background: #e67e22; /* deeper autumn orange */
+  margin: 0.5rem auto 0;
+  border-radius: 0.125rem;
+}
+
+
+
+/* Filters Panel */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,0.1);
+  border-radius: 0.75rem;
+  margin: 1rem;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.filters input, .filters select {
+  padding: 0.4rem 0.6rem;
+  margin-top: 0.3rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.filters button {
+  background: #020e2a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filters button:hover {
+  background: #061853;
+}
+
+/* Map */
+.map-container {
+  flex: 1;
+  margin: 0.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.75rem rgba(0,0,0,0.15);
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+}
+
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
