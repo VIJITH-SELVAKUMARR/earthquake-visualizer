@@ -1,12 +1,37 @@
-# React + Vite
+# 🌍 Earthquake Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An **interactive earthquake visualization web app** built with **React, Vite, Leaflet, and Heatmaps**.  
+It fetches live earthquake data from the **USGS Earthquake API** and displays it on a world map with heatmaps, markers, and a timeline slider for animated playback.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📡 **Live Data** – Fetches real-time earthquake data from [USGS](https://earthquake.usgs.gov/).
+- 🗺 **Interactive Map** – Built with [React Leaflet](https://react-leaflet.js.org/).
+- 🔥 **Heatmap Layer** – Visualizes earthquake intensity with [leaflet.heat](https://github.com/Leaflet/Leaflet.heat).
+- 📍 **Circle Markers** – Show location, magnitude, and details on hover.
+- 🎚 **Filters** – Filter earthquakes by magnitude, depth, and date range.
+- ⏳ **Timeline Slider** – Move through time and see earthquakes appear sequentially.
+- ▶️ **Animation Mode** – Play earthquakes in chronological order for better seismic pattern understanding.
+- 📱 **Responsive UI** – Mobile-friendly with a clean design.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: React + Vite  
+- **Map Rendering**: Leaflet + React Leaflet  
+- **Heatmap**: leaflet.heat  
+- **Styling**: CSS / Tailwind (optional)  
+- **Data Source**: [USGS Earthquake GeoJSON API](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)  
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/quake-visualizer.git
+cd quake-visualizer
