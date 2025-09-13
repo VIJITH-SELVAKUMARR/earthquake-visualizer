@@ -1,4 +1,4 @@
-# 🌍 Earthquake Visualizer
+# 🌍 [Earthquake Visualizer](https://earthquake-visualizer-eoyqble6x-vijith-selvakumars-projects.vercel.app/)
 
 An **interactive earthquake visualization web app** built with **React, Vite, Leaflet, and Heatmaps**.  
 It fetches live earthquake data from the **USGS Earthquake API** and displays it on a world map with heatmaps, markers, and a timeline slider for animated playback.
